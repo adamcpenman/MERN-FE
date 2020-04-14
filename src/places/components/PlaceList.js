@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Card from '../../shared/components/UIElement/Card';
+import Card from '../../shared/components/UIElements/Card';
 import PlaceItem from './PlaceItem';
 import './PlaceList.css';
 
@@ -9,12 +9,13 @@ const PlaceList = (props) => {
     return (
       <div className='place-list center'>
         <Card>
-          <h2> No Place found. Maybe Create one?</h2>
-          <button>Shared Place</button>
+          <h2>No places found. Maybe create one?</h2>
+          <button>Share Place</button>
         </Card>
       </div>
     );
   }
+
   return (
     <ul className='place-list'>
       {props.items.map((place) => (
